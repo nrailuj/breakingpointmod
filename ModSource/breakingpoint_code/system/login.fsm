@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "D:\Games\Steam\SteamApps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, Breaking Point Player Login">*/
+/*%FSM<COMPILE "E:\Games\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, Breaking Point Player Login">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-75.000000,-225.000000,25.000000,-175.000000,0.000000,"init"};
@@ -56,8 +56,8 @@ item51[] = {"ERROR_1__NOT_REA",2,250,-800.000000,200.000000,-700.000000,250.0000
 item52[] = {"",7,210,-904.000000,221.000046,-896.000000,228.999969,0.000000,""};
 item53[] = {"",7,210,-479.000000,296.000031,-471.000000,303.999939,0.000000,""};
 item54[] = {"True",8,218,-175.000000,800.000000,-75.000000,850.000000,0.000000,"True"};
-item55[] = {"Spawn_Dialog",2,250,-75.000000,750.000000,25.000000,800.000000,0.000000,"Spawn Dialog"};
-item56[] = {"Faction_Dialog",2,4346,-75.000000,650.000000,25.000000,700.000000,0.000000,"Faction Dialog"};
+item55[] = {"Spawn_Dialog",2,4346,-75.000000,750.000000,25.000000,800.000000,0.000000,"Spawn Dialog"};
+item56[] = {"Faction_Dialog",2,250,-75.000000,650.000000,25.000000,700.000000,0.000000,"Faction Dialog"};
 item57[] = {"True",8,218,-175.000000,700.000000,-75.000000,750.000000,0.000000,"True"};
 item58[] = {"Rejected",4,218,-650.000000,125.000000,-550.000000,175.000000,0.000000,"Rejected"};
 item59[] = {"",7,210,-479.000000,146.000031,-471.000000,153.999954,0.000000,""};
@@ -266,8 +266,8 @@ link117[] = {103,102};
 link118[] = {104,105};
 link119[] = {105,80};
 link120[] = {98,106};
-globals[] = {0.000000,0,0,0,0,640,480,1,248,6316128,1,-377.392334,241.103027,1211.934326,391.669739,938,1244,1};
-window[] = {2,-1,-1,-32000,-32000,1120,660,2289,221,3,956};
+globals[] = {0.000000,0,0,0,0,640,480,1,248,6316128,1,-279.838440,302.462341,1341.536499,544.442505,938,1244,1};
+window[] = {2,-1,-1,-1,-1,1133,234,1863,234,3,956};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -721,9 +721,7 @@ class FSM
                          "};" \n
                          "" \n
                          "if (_class == 7) then {" \n
-                         "	BP_isUndead = true;" \n
-                         "	setViewDistance 200;" \n
-                         "	player setVariable [""lastFeed"",diag_tickTime];" \n
+                         "    BP_isUndead = true;" \n
                          "} else {" \n
                          "	setViewDistance -1;" \n
                          "	//[""Breaking Point"",_town,""Day"" + str(_days)] spawn BIS_fnc_infoText;" \n
@@ -1192,12 +1190,6 @@ class FSM
                          "{" \n
                          "	//Zombies Don't Have Spawn Selection Dialog" \n
                          "	params [""_randomSpot"",""_class""];" \n
-                         "	" \n
-                         "	if (_class == 7) exitWith " \n
-                         "	{" \n
-                         "		//BP_Strongholds = -1;" \n
-                         "		BP_spawnLocation = -1;" \n
-                         "	};" \n
                          "" \n
                          "	private [""_dialogSpawn"",""_playerClass"",""_playerFactionName"",""_playerFactionPoints""];" \n
                          "	//_dialogStronghold = format [""RscDisplayStronghold%1"",worldName];" \n
@@ -1313,13 +1305,10 @@ class FSM
                          "				createDialog ""RscDisplayFactionSystem"";" \n
                          "			} else {" \n
                          "				//Undead Locked	" \n
-                         "				if (BP_selectClass == 7) then" \n
+                         "				if (BP_selectClass == 7 && _undeadDisabled) then" \n
                          "				{" \n
-                         "					if (_hunter < 5000 or _outlaw < 5000 or _undeadDisabled) then" \n
-                         "					{" \n
-                         "						BP_selectClass = -1;" \n
-                         "						createDialog ""RscDisplayFactionSystem"";" \n
-                         "					};" \n
+                         "					BP_selectClass = -1;" \n
+                         "					createDialog ""RscDisplayFactionSystem"";" \n
                          "				};" \n
                          "			};" \n
                          "		};" \n

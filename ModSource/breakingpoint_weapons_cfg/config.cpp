@@ -342,7 +342,6 @@ class CfgMovesBasic
 			GestureLegPush[] = {"GestureLegPush", "Gesture"};
 			GestureNod[] = {"GestureNod", "Gesture"};
 			GestureAgonyCargo[] = {"GestureAgonyCargo", "Gesture"};
-			access = 3;
 			ladderOnDown = "LadderCivilOn_Top";
 			ladderOnUp = "LadderCivilOn_Top";
 			turnSpeed = 1;
@@ -1887,6 +1886,7 @@ class CfgWeapons
 			weaponInfoType = "RscWeaponZeroing";
 			flash = "";
 			flashSize = 0;
+			class WeaponSlotsInfo;			 							 
 			class GunParticles
 			{
 				class FirstEffect 
@@ -1915,6 +1915,8 @@ class CfgWeapons
 		cursorAim = "throw";
 		cursorSize = 1;
 		weaponInfoType = "RscWeaponEmpty";
+		class WeaponSlotsInfo;
+		class Single;									   												   
 	};
 
 	class MeleeHatchet : MeleeWeapon 
@@ -4330,7 +4332,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		author = "Bohemia Interactive";
 		baseWeapon = "arifle_CTARS_blk_F";
 		displayName = "CAR-95-1 5.8mm (Black)";
-		hiddenSelectionsTextures[] = {"\A3\Weapons_F_Exp\Rifles\CTAR\Data\CTAR_F_1_co.paa", "\A3\Weapons_F_Exp\Rifles\CTAR\Data\CTAR_F_2_co.paa"};
+
 		picture = "\A3\Weapons_F_Exp\Rifles\CTARS\Data\UI\icon_arifle_CTARS_blk_F_X_CA.paa";
 		scope = 2;
 	};
@@ -16030,7 +16032,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		scope = 2;
 		maxZeroing = 1600;
 		model = "\breakingpoint_weapons\models\Kar98\BP_Kar98.p3d";
-		displayName = "Karabiner 98";
+		displayName = "Kar98";
 		magazines[] = {"BP_5Rnd_Mauser_Mag"};
 		descriptionShort = "German Bolt action sniper rifle";
 		picture = "\breakingpoint_weapons\icons\gear_kar98_rifle_x_ca.paa";
@@ -16143,7 +16145,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		scope = 2;
 		maxZeroing = 1600;
 		model = "\breakingpoint_weapons\models\Kar98\BP_Kar98k.p3d";
-		displayName = "Karabiner 98k";
+		displayName = "Kar98k";
 		magazines[] = {"BP_5Rnd_Mauser_Mag"};
 		descriptionShort = "German Bolt action sniper rifle";
 		picture = "\breakingpoint_weapons\icons\gear_kar98_rifle_x_ca.paa";
@@ -18646,14 +18648,14 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		_generalMacro = "muzzle_snds_H_khk_F";
 		author = "Bohemia Interactive";
 		displayName = "Sound Suppressor (6.5 mm, Khaki)";
-		model = "\A3\weapons_f\acc\acca_snds_h_F";
+		model = "\A3\Weapons_F_Exp\Acc\acca_snds_65_TI_ghex_F.p3d";
 		picture = "\A3\Weapons_F_Exp\Acc\Data\UI\icon_muzzle_snds_H_khk_F_ca.paa";
 	};
 	class BP_muzzle_snds_H_snd_F : muzzle_snds_H { //Sound Suppressor (6.5 mm, Sand)
 		_generalMacro = "muzzle_snds_H_snd_F";
 		author = "Bohemia Interactive";
 		displayName = "Sound Suppressor (6.5 mm, Sand)";
-		model = "\A3\weapons_f\acc\acca_snds_h_F";
+		model = "\A3\Weapons_F_Exp\Acc\acca_snds_65_TI_hex_F.p3d";
 		picture = "\A3\Weapons_F_Exp\Acc\Data\UI\icon_muzzle_snds_H_snd_F_ca.paa";
 	};
 	class BP_muzzle_snds_H_MG_blk_F : muzzle_snds_H_MG { //Sound Suppressor LMG (6.5 mm, Black)
@@ -18661,7 +18663,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		author = "Bohemia Interactive";
 		displayName = "Sound Suppressor LMG (6.5 mm, Black)";
 		model = "\A3\Weapons_F\Machineguns\M200\lmg_suppressor";
-		picture = "\A3\Weapons_F_Exp\Acc\Data\UI\icon_acca_snds_lmg_blk_F_ca.paa";
+		picture = "\a3\Weapons_F\acc\Data\UI\icon_muzzle_snds_M_ca.paa";
 	};
 	class BP_muzzle_snds_H_MG_khk_F : muzzle_snds_H_MG { //Sound Suppressor LMG (6.5 mm, Khaki)
 		_generalMacro = "muzzle_snds_H_MG_khk_F";
@@ -18681,7 +18683,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		author = "Bohemia Interactive";
 		displayName = "Sound Suppressor (5.56 mm, Sand)";
 		model = "\A3\Weapons_F\Acc\acca_snds_lmg_blk_F.p3d";
-		picture = "\A3\Weapons_F_Exp\Acc\Data\UI\icon_acca_snds_lmg_blk_F_ca.paa";
+		picture = "\a3\weapons_f_exp\acc\data\ui\icon_muzzle_snds_m_snd_f_ca.paa";
 	};
 	
 	class BP_muzzle_snds_B_khk_F : BP_muzzle_snds_m_khk_F { //Sound Suppressor (7.62 mm, Khaki)
@@ -21074,7 +21076,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 		scope = 2;
 		displayName = "Harris Bipod";
 		descriptionshort = "Stabilizing rifle attachment </br> Drastically reduced recoil when prone and increased overall weapon stability";
-		picture = "\breakingpoint_weapons\textures\dmr\bipod_harris_co.paa";
+		picture = "\A3\Weapons_F_Mark\Data\UI\icon_bipod_02_F_blk_ca.paa";
 		model = "\breakingpoint_weapons\models\Harris\BP_Harris.p3d";
 		inertia = -0.200000;		
 		class ItemInfo: InventoryMuzzleItem_Base_F 
@@ -21227,7 +21229,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 	    scope = 2;                                                                   
 	    displayName = "Light Bipod";  
 		descriptionShort = "Bipod for intermediate Rifle use";		
-	    picture = "\A3\Weapons_F_Mark\Data\UI\gear_accu_bipod_01_snd_CA.paa";          
+		picture = "\A3\Weapons_F_Mark\Data\UI\icon_bipod_02_F_blk_ca.paa";
 	    model = "\breakingpoint_weapons\models\Harris\BP_Harris.p3d";                      
    
 	    class ItemInfo: InventoryUnderItem_Base_F
@@ -21246,7 +21248,7 @@ class BP_arifle_AKS_base_F : arifle_AKS_base_F { //AKS-74U Base
 	    scope = 2;                                                                   
 	    displayName = "Heavy Bipod";
 		descriptionShort = "Bipod for LMG and Sniper applications";		
-	    picture = "\A3\Weapons_F_Mark\Data\UI\gear_accu_bipod_01_snd_CA.paa";          
+		picture = "\A3\Weapons_F_Mark\Data\UI\icon_bipod_03_F_blk_ca.paa";
 	    model = "\breakingpoint_weapons\models\Harris\BP_Harris2.p3d";                      
    
 	    class ItemInfo: InventoryUnderItem_Base_F
@@ -21560,6 +21562,7 @@ class CfgMagazines {
 		ammo = "BP_AlarmClock_Ammo";
 		type = 256;
 		mass = 2;
+		//scope = 3;
 		value = 1;
 		maxLeadSpeed = 7;
 		initSpeed = 18;
@@ -22081,7 +22084,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "30rnd 545x39mm Magazine";
-		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_545x39_Mag_F_ca.paa";
 		ammo = "BP_545x39_Ball";
 		count = 30;
 		initSpeed = 880;
@@ -22094,7 +22097,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "30rnd 545x39mm HP Magazine";
-		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_545x39_Mag_Tracer_F_ca.paa";
 		ammo = "BP_545x39_HP";
 		count = 30;
 		initSpeed = 895;
@@ -22108,7 +22111,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "30rnd 545x39mm 7N22 Magazine";
-		picture = "\breakingpoint_weapons\icons\BP_M855A1_ca.paa";
+		picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_545x39_Mag_Tracer_Green_F_ca.paa";
 		ammo = "BP_545x39_7N22";
 		count = 30;
 		initSpeed = 890;
@@ -22123,7 +22126,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "30rnd 545x39mm 7T3 Tracer Magazine";
-		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_545x39_Mag_Tracer_F_ca.paa";
 		ammo = "BP_545x39_Ball";
 		count = 30;
 		initSpeed = 880;
@@ -22136,7 +22139,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "75Rnd RPK Drum";
-		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_75Rnd_762x39_Mag_F_CA.paa";
 		ammo = "BP_545x39_Ball";
 		count = 75;
 		initSpeed = 880;
@@ -22148,7 +22151,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "30Rnd AKM Magazine";
-		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_762x39_Mag_F_ca.paa";
 		ammo = "BP_762x39_Ball";
 		count = 30;
 		mass = 15;
@@ -22162,7 +22165,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "60Rnd AKM Magazine";
-		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
+		picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_762x39_Mag_F_ca.paa";
 		ammo = "BP_762x39_Ball";
 		count = 60;
 		mass = 23;
@@ -23107,7 +23110,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "2Rnd Slugs";
-		picture = "\A3\Weapons_F\Data\UI\M_12gauge_slugs_CA.paa";
+		picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_CA.paa";
 		count = 2;
 		initSpeed = 609;
 		ammo = "BP_12Gauge_Slug";
@@ -23131,7 +23134,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "2Rnd 00 Buckshot";
-		picture = "\A3\Weapons_F\Data\UI\M_12gauge_slugs_CA.paa";
+		picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_CA.paa";
 		count = 2;
 		initSpeed = 365;
 		ammo = "BP_12Gauge_Buck";
@@ -23155,7 +23158,7 @@ class CfgMagazines {
 	{
 		scope = 2;
 		displayName = "2Rnd Magnum 000 Buckshot";
-		picture = "\A3\Weapons_F\Data\UI\M_12gauge_slugs_CA.paa";
+		picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_CA.paa";
 		count = 2;
 		initSpeed = 440;
 		ammo = "BP_12Gauge_Buck2";
