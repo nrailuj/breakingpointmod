@@ -140,7 +140,7 @@ waitUntil
 	} else {
 
 		//Disable Chat
-		showChat false;
+//		showChat false;
 
 		//Calculate Hunger
 		if !(_inVehicle) then {
@@ -277,9 +277,9 @@ waitUntil
 	
 	//VON Check to Ensure Players Don't Speak over VON
 	if (VoN_isOn) then {
-		if ((VoN_currentTxt == "Ranger") or (VoN_currentTxt == "Nomad") or (VoN_currentTxt == "Outlaw") or (VoN_currentTxt == localize "str_channel_group")) then 
+		if ((VoN_currentTxt == "Alliance") or (VoN_currentTxt == "Outlaw") or (VoN_currentTxt == "Hunter") or (VoN_currentTxt == "Engineer") or (VoN_currentTxt == "Watchers") or (VoN_currentTxt == localize "str_channel_group")) then 
 		{
-			cutText ["Don't use VON on Faction Specific or Global Channels.", "PLAIN DOWN"];
+			cutText ["Your faction cannot use faction voice! STOP OR YOU WILL GET KICKED!", "PLAIN DOWN"];
 			VoN_Time = VoN_Time + 1;
 			if (VoN_Time > 2) then { endMission "END1"; };
 		};
@@ -299,9 +299,9 @@ waitUntil
 	if (_score < 0) then { player addRating (_score * -1); };
 	
 	//Update Chat - Enable / Disable Based on Stream Friendly UI
-	if (!BP_isUndead) then {
-		if (isNull findDisplay 49) then { showChat (!isStreamFriendlyUIEnabled); };
-	};
+//	if (!BP_isUndead) then {
+	if (isNull findDisplay 49) then { showChat (!isStreamFriendlyUIEnabled); };
+//	};
 
 	//Broken Group System Fixes
 	call BP_fnc_groupFix;

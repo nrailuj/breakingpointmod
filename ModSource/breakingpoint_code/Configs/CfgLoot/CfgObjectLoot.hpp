@@ -15,14 +15,14 @@ class CfgObjectLoot {
 		hangPos[] = {};
 		vehPos[] = {};
 	};
-	class MilitaryGeneral : Default {};
-	class MilitarySpecial : Default {};
-	class MilitaryAirfield : Default {};
-	class MilitaryRanger : Default {};
-	class BystricaMilitaryCastle : Default {};
-	class BystricaMilitaryDeerstand : Default {};
-	class BystricaMilitaryCivilian : Default {};
-	class BystricaMilitaryCamp : Default {};
+//	class MilitaryGeneral : Default {};
+//	class MilitarySpecial : Default {};
+//	class MilitaryAirfield : Default {};
+//	class MilitaryRanger : Default {};
+//	class BystricaMilitaryCastle : Default {};
+//	class BystricaMilitaryDeerstand : Default {};
+//	class BystricaMilitaryCivilian : Default {};
+//	class BystricaMilitaryCamp : Default {};
 	
 	class Brick: Default {
 		lootChance = 1;
@@ -379,7 +379,7 @@ class CfgObjectLoot {
 		itemType[] =
 		{	
 			{"BP_ScarH","weapon"},
-			{"BP_M107_DES","weapon"},
+			{"BP_M107","weapon"},
 			{"BP_AWSM","weapon"},
 			{"BP_M24Spec","weapon"},
 			{"BP_GM6_SOS","weapon"},
@@ -431,13 +431,13 @@ class CfgObjectLoot {
 			{"ItemZipDisk","magazine"},
 			{"ItemCards","magazine"},
 			{"HandGrenade","magazine"},
-			{"BP_SW44","weaponA"},
+			{"BP_MAR10","weapon"},
 			{"BP_M4_300MK","weaponA"},	
 			{"BP_100Rnd_127x99_box","magazine"}
 		};
 		itemChance[] =	{	
 			0.03,	//BP_ScarH
-			0.01,	//BP_M107_DES
+			0.01,	//BP_M107
 			0.01,	//BP_AWSM
 			0.03,	//BP_M24Spec
 			0.01,	//BP_GM6_SOS
@@ -472,7 +472,7 @@ class CfgObjectLoot {
 			0.03,   //BP_PS22
 			0.07,   //RANGEFINDER
 			0.05,	//Cheytac AMMO
-			0.05,	//Cheytac AMMO
+			0.02,	//Cheytac AMMO
 			0.05,	//Cheytac AMMO
 			0.05,	//Cheytac AMMO
 			0.05,	//Cheytac AMMO
@@ -489,7 +489,7 @@ class CfgObjectLoot {
 			0.07,	//TRASH
 			0.07,	//TRASH
 			0.05,	//NADE
-			0.04,    //BP_SW44
+			0.02,    //BADNEWS
 			0.04,    //BP_M4_300MK
 			0.02    //50Cal Box
 		};
@@ -608,16 +608,16 @@ class CfgObjectLoot {
 			{"ItemCan2","magazine"},
 			{"ItemCan3","magazine"},
 			{"ItemCan4","magazine"},
-			{"ItemCan5","magazine"},
+			{"V_HeroVest_BP","vest"},
 			{"BP_Carryall_Hero","backpack"},
 			{"BP_StoneGhillie","uniform"},
 			{"BP_TreeGhillie","uniform"},
 			{"BP_DirtGhillie","uniform"},
 			{"BP_Wetsuit","uniform"},
-			{"BP_Guarilla_Faded","uniform"},
-			{"BP_Guarilla_Khaki","uniform"},
-			{"BP_Guarilla_Leader","uniform"},
-			{"BP_Guarilla_Camo","uniform"},
+			{"BP_762Muzzle","toolbelt"},
+			{"BP_R7P","toolbelt"},
+			{"BP_AFG","toolbelt"},
+			{"BP_22Sup","toolbelt"},
 			{"BP_Ghillie_Lush","uniform"},
 			{"V_RebreatherB","vest"},
 			{"BP_10Rnd_127x99","magazine"},
@@ -640,7 +640,7 @@ class CfgObjectLoot {
 			{"BP_15Rnd_9x19OVP","magazine"},
 			{"BP_7Rnd_45JHP","magazine"},
 			{"BP_15Rnd_45JHP","magazine"},
-			{"BP_muzzle_snds_H_MG","toolbelt"},
+			{"BP_Mk12Sup","toolbelt"},
 			{"BP_muzzle_snds_B","toolbelt"},
 			{"BP_muzzle_snds_H","toolbelt"},
 			{"BP_muzzle_snds_M12","toolbelt"},
@@ -667,7 +667,9 @@ class CfgObjectLoot {
 			{"BP_10Rnd_127x99_RAUF","magazine"},
 			{"BP_10Rnd_338Lapua_Mag","magazine"},
 			{"BP_10Rnd_300_Mag","magazine"},
-			{"BP_5Rnd_127x108_Mag","magazine"}
+			{"BP_5Rnd_127x108_Mag","magazine"},
+			{"BP_Carryall_Bandit","backpack"},
+			{"BP_Coyote_oli","backpack"}
 		};
 		itemChance[] =	{	
 			0.10,	//Binoculars
@@ -697,17 +699,17 @@ class CfgObjectLoot {
 			0.02,	//FOOD
 			0.02,	//FOOD
 			0.02,	//FOOD
-			0.02,	//FOOD
+			0.03,	//MERCENARY VEST
 			0.02,	//MILITARY SURVIVAL PACK
 			0.07,	//STONE GHILLIE
 			0.07,	//TREE GHILLIE
 			0.07,	//DIRT GHILLIE
 			0.07,	//RUSSIAN CLOTHING
 			0.07,	//WESTSUIT CLOTHING
-			0.07,	//Guerilla Faded
-			0.07,	//Guerilla Shit Green Sweater
-			0.07,	//Guerilla Leader
-			0.07,	//Guerilla Khaki Camo
+			0.07,	//762MUZZLEBRAKE
+			0.07,	//R7PBARREL
+			0.07,	//AFG
+			0.07,	//22SUPPRESSOR
 			0.02,   //REBREATHER
 			0.05,	//50CAL AMMO
 			0.05,   //200Rnd_556
@@ -728,11 +730,11 @@ class CfgObjectLoot {
 			0.05,   //15Rnd_9x19OVP
 			0.05,   //7Rnd_45JHP
 			0.05,   //15Rnd_45JHP
-			0.02,   //BP_muzzle_snds_H_MG
+			0.02,   //BP_Mk12Sup
 			0.02,   //BP_muzzle_snds_B
 			0.02,   //BP_muzzle_snds_H
 			0.02,   //BP_muzzle_snds_M12
-			0.03,   //BP_optic_ACO
+			0.03,   //BP_BP_compm4s
 			0.03,   //BP_SOS
 			0.03,   //optic_Arco
 			0.03,   //BP_PSOP
@@ -754,7 +756,9 @@ class CfgObjectLoot {
 			0.01,	//Cheytac AMMO
 			0.02,	//Cheytac AMMO
 			0.02,	//Cheytac AMMO
-			0.02	//Cheytac AMMO
+			0.02,	//Cheytac AMMO
+			0.01,	//CarryallBandit
+			0.01	//COYOTEBACKPACK
 		};
 	};
 
@@ -778,7 +782,7 @@ class CfgObjectLoot {
 			{"BP_LeeEnfield2","weaponA"},
 			{"BP_LeeEnfieldK","weapon"},
 			{"BP_LeeEnfield_old","weapon"},
-			{"BP_Kitbag_sgg","backpack"},
+			{"BP_CivilianOneGreen","backpack"},
 			{"BP_Kitbag_cbr","backpack"},
 			{"BP_Kitbag_mcamo","backpack"},
 			{"Binocular","weaponNA"},
@@ -833,7 +837,7 @@ class CfgObjectLoot {
 			0.01,	//ENFIELD SCOPED
 			0.02,   //ENFIELD BAYONET
 			0.05,	//ENFIELD OLD
-			0.08, 	//KIT SAGE
+			0.04, 	//CIVILIAN ONE BACKPACK
 			0.08, 	//KIT CBR
 			0.08,   //KIT CAMO
 			0.05,	//BINOCULARS
@@ -879,7 +883,7 @@ class CfgObjectLoot {
 		itemType[] =	{
 			{"BP_Mak_Old","weapon"},
 			{"BP_1886S","weaponA"},
-			{"BP_1886C","weaponA"},
+			{"BP_1866C","weaponA"},
 			{"BP_SW45","weapon"},
 			{"BP_SW44","weapon"},
 			{"BP_1911","weapon"},
@@ -968,7 +972,7 @@ class CfgObjectLoot {
 			{"ItemBrick2","magazine"},
 			{"BP_Kitbag_sgg","backpack"},
 			{"BP_Kitbag_cbr","backpack"},
-			{"BP_Kitbag_mcamo","backpack"},
+			{"BP_CivilianOneRed","backpack"},
 			{"Binocular","weaponNA"},
 			{"PartWoodPile","magazine"},
 			{"ChemG","magazine"},
@@ -1032,7 +1036,7 @@ class CfgObjectLoot {
 			0.06,	//BRICK2
 			0.03, 	//KIT SAGE
 			0.02, 	//KIT CBR
-			0.01,   //KIT CAMO
+			0.01,   //CIVILIAN ONE RED BACKPACK
 			0.05,	//BINOCULARS
 			0.16,	//WOOD
 			0.05,	//CHEM
@@ -1322,7 +1326,7 @@ class CfgObjectLoot {
 			0.11,   //PUNCTURE KIT
 			0.09,   //ITEM BATTERY
 			0.12,   //FIBERGLASS
-			0.02,   //STEEL
+			0.05,   //STEEL
 			0.07,   //HYDRAULIC FLUID
 			0.05,   //ELECTRONICS
 			0.07,   //WIRE
@@ -1381,7 +1385,7 @@ class CfgObjectLoot {
 			0.11,   //PUNCTURE KIT
 			0.09,   //ITEM BATTERY
 			0.12,   //FIBERGLASS
-			0.02,   //STEEL
+			0.03,   //STEEL
 			0.07,   //HYDRAULIC FLUID
 			0.05,   //ELECTRONICS
 			0.07,   //WIRE
@@ -1496,7 +1500,7 @@ class CfgObjectLoot {
 			{"BP_Rhino","weapon"},
 			{"V_Rangemaster_belt_BP","vest"}, 
 			{"BP_Kitbag_sgg","backpack"},
-			{"BP_Kitbag_cbr","backpack"},
+			{"BP_CivilianOneBlue","backpack"},
 			{"BP_Kitbag_mcamo","backpack"}, 
 			{"ItemSoda1","magazine"},
 			{"ItemSoda2","magazine"},
@@ -1540,7 +1544,7 @@ class CfgObjectLoot {
 			0.01,	//RHINO
 			0.04, 	//RANGEMASTER BELT
 			0.03, 	//KIT SAGE
-			0.02, 	//KIT CBR
+			0.02, 	//CIVILIAN ONE BLUE BACKPACK
 			0.01,   //KIT CAMO
 			0.01,	//FOOD
 			0.01,	//FOOD
@@ -1612,7 +1616,7 @@ class CfgObjectLoot {
 			{"BP_5Rnd_300AAC_Mag","magazine"},
 			{"ItemBandage","magazine"},
 			{"BP_8Rnd_Slug","magazine"},
-			{"BP_2Rnd_MagBuckshot","magazine"},
+			{"BP_9x39_Mag","magazine"},
 			{"BP_2Rnd_Slug","magazine"},
 			{"BP_16Rnd_9x21_Mag","magazine"},
 			{"BP_5Rnd_3006_Mag","magazine"},
@@ -1622,7 +1626,7 @@ class CfgObjectLoot {
 			{"ItemPainkiller","magazine"},
 			{"SmokeShell","magazine"},
 		    {"BP_Kitbag_sgg","backpack"},
-			{"BP_Kitbag_cbr","backpack"},
+			{"BP_CivilianOneBlack","backpack"},
 			{"BP_Kitbag_mcamo","backpack"},
 		    {"BP_FieldPack_blk","backpack"},
 			{"BP_FieldPack_ocamo","backpack"},
@@ -1655,7 +1659,7 @@ class CfgObjectLoot {
 			0.07,	//BANDAGE
 			0.01,	//300 BLACKOUT
 			0.05,	//BENELLI SLUG
-			0.05,	//2RND MAGBUCKSHOT
+			0.05,	//VSSAMMO
 			0.05,	//2RND SLUG
 			0.09,	//9MM MAG
 			0.01,	//3006 MAG
@@ -1665,7 +1669,7 @@ class CfgObjectLoot {
 			0.15,	//PAINKILLERS
 			0.02,	//SMOKE
 			0.03, 	//KIT SAGE
-			0.02, 	//KIT CBR
+			0.02, 	//CIVILIAN ONE BLACK BACKPACK
 			0.02,   //KIT CAMO
 			0.05, 	//FIELD BLACK
 			0.05, 	//FIELD HEX
@@ -1692,11 +1696,12 @@ class CfgObjectLoot {
 		itemType[] =	{
 			{"BP_m9","weapon"},
 			{"BP_G17","weapon"},
+			{"BP_Browning","weapon"},
             {"BP_M16OLD","weapon"},
 			{"BP_AR10","weapon"},
 			{"BP_SW45","weapon"},
 			{"BP_SUD_AK74M","weapon"},
-			{"BP_AK74U","weapon"},
+			{"BP_arifle_AKS_F","weapon"},
 			{"BP_M4Old","weapon"},
 			{"BP_M4","weaponA"},
 			{"BP_M4K","weapon"},
@@ -1707,12 +1712,14 @@ class CfgObjectLoot {
 			{"BP_LeeEnfield2","weaponA"},
 			{"BP_Crossbow","weapon"},
 			{"BP_Crossbow_DigitCamo","weaponA"},
-			{"BP_MP5","weapon"}
-
+			{"BP_MP5","weapon"},
+			{"BP_Vector","weapon"},
+			{"BP_VSS","weaponA"}
 		};
 		itemChance[] =	{
 			0.07,	//M9
 			0.07,	//G17
+			0.07,	//BROWNING
 			0.10,	//M16
 			0.02,	//AR10
 			0.02,	//SW45
@@ -1728,7 +1735,9 @@ class CfgObjectLoot {
 			0.03,	//ENFIELD SCOPED
 			0.03,	//Crossbow
 			0.03,	//Crossbow
-			0.10	//Mp5
+			0.10,	//Mp5
+			0.09,	//Vector
+			0.05	//VSS
 		};
 	};
 	
@@ -1895,7 +1904,7 @@ class CfgObjectLoot {
 			{"BP_MXM","weapon"},
 			{"BP_M24DES","weaponA"},
 			{"BP_M4_300","weaponA"},
-			{"BP_AK74U","weapon"},
+			{"BP_arifle_AKS_F","weapon"},
 			{"BP_M16a4","weapon"},
 			{"BP_SUD_AK108","weaponA"},
 			{"BP_SUD_AK109","weaponA"}
@@ -1965,11 +1974,11 @@ class CfgObjectLoot {
 			{"BP_10Rnd_65x39","magazine"},
 			{"BP_7Rnd_45acp","magazine"},
 			{"BP_6Rnd_45JHP_Mag","magazine"},
-			{"SmokeShellRed","magazine"},
+			//{"SmokeShellRed","magazine"},
 			{"optic_holosight","toolbelt"},
 			{"V_Rangemaster_belt_BP","vest"},
-			{"BlueprintCrate1","magazine"},
-			{"BlueprintCamoNet","magazine"},
+			{"BP_10Rnd_338Lapua_Mag","magazine"},
+			{"BlueprintRockStash","magazine"},
 			{"V_HarnessOGL_brn_BP","vest"},
 			{"BP_gemtech9","toolbelt"},
 			{"ItemSurgeryKit","toolbelt"},
@@ -2023,11 +2032,11 @@ class CfgObjectLoot {
 			0.05,	//10RND GRENDEL
 			0.05,	//45 JHP
 			0.11,	//45 ACP
-			0.15,	//SMOKE GRENADE RED
+			//0.02,	//SMOKE GRENADE RED
 			0.05,	//HOLO
 			0.12,	//BANDOLIER OLIVE
-			0.17,   //TENT BLUEPRINT
-			0.14,   //CAMO NET BLUEPRINT
+			0.04,   //338AMMO
+			0.05,   //ROCK STASH BLUEPRINT
 			0.03,   //TAC VEST
 			0.03,   //GEMTECH 9MM SUPPR
 			0.03,   //SURGERY KIT
@@ -2055,12 +2064,12 @@ class CfgObjectLoot {
 			{"BP_M4OLD","weapon"},
 			{"BP_Benelli","weapon"},
 			{"BP_AKM","weapon"},
-			{"BP_AR10","weapon"},
+			{"BP_MAR10","weapon"},
 			{"BP_SVT40","weapon"},
 			{"BP_1911MDes","weapon"},
 			{"BP_M4_300","weaponA"},
 			{"BP_M4_300k","weapon"},
-			{"BP_AK74U","weapon"},
+			{"BP_arifle_AKS_F","weapon"},
 			{"BP_SVT40","weaponA"},
 			{"BP_M16OLD","weapon"},
 			{"BP_SUD_AK108","weaponA"},
@@ -2077,8 +2086,8 @@ class CfgObjectLoot {
 			0.09,	//M4A1
 			0.07,	//M4A1
 			0.15,	//BENELLI
-			0.01,	//AKM
-			0.05,	//AR10
+			0.02,	//AKM
+			0.01,	//MAR10
 			0.05,	//SVT40
 			0.01,	//1911DES
 			0.02,	//M4300
@@ -2278,6 +2287,7 @@ class CfgObjectLoot {
 			{"BP_Minimi_HG","weapon"},
 			{"BP_FNPTac45","weaponA"},
 			{"BP_G18","weapon"},
+			{"BP_SIGP226","weapon"},
 			{"BP_M4","weaponA"},
 			{"BP_FNFAL","weapon"},
 			{"BP_FNFALK","weapon"},
@@ -2304,6 +2314,7 @@ class CfgObjectLoot {
 			0.02,	//M249
 			0.01,	//FNPTAC
 			0.06,	//G18
+			0.08,	//SIGP226
 			0.10,	//M4A1
 			0.10,	//FNFAL
 			0.03,	//FNFALK
@@ -2705,32 +2716,32 @@ class CfgObjectLoot {
 		lootPos[] = {};
 		itemType[] =	{
 			{"BP_m9","weapon"},
-			{"BP_FamasSurb_HG","weapon"},	
+			{"optic_Aco","toolbelt"},	
             {"BP_M16OLD","weapon"},
-			{"BP_m9c","weapon"},
+			{"BP_m9_WDL","weapon"},
 			{"BP_SW45","weapon"},
 			{"BP_SUD_AK74M","weapon"},
 			{"BP_AK74U","weapon"},
-			{"BP_SUD_AK105","weapon"},
+			{"BP_SUD_AK107","weapon"},
 			{"BP_M4Old","weapon"},
 			{"BP_M4","weaponA"},
 			{"BP_M4K","weapon"},
 			{"BP_Benelli","weapon"},
 			{"BP_g17","weapon"},
-			{"BP_MP7","weapon"},
+			{"BP_MP5","weapon"},
 			{"BP_R300","weaponA"},
-			{"BP_Mp7_urb","weapon"},
+			{"BP_MP5","weapon"},
 			{"BP_LeeEnfield2","weaponA"}
 			
 		};
 		itemChance[] =	{
 			0.07,	//M9
-			0.01,	//FAMAS
+			0.01,	//ACO
 			0.10,	//FAMAS
 			0.05,	//M9 CAMO
 			0.02,	//M9 CAMO
 			0.09,	//AK74m	
-			0.07,	//AKS74U	
+			0.02,	//AKS74U	
 			0.03,	//AK105
 			0.07,	//DM M4
 			0.02,	//DM M4
@@ -2965,7 +2976,7 @@ class CfgObjectLoot {
 			{"BP_M4","weaponA"},
 			{"BP_CAMO_M4","weapon"},
 			{"BP_KimberNW","weapon"},
-			{"BP_FamasSurb_HG","weapon"},
+			{"optic_Aco","toolbelt"},
 			{"BP_M4DDRP_SPEC","weaponA"},
 			{"BP_DMR_Officer","weaponA"},
 			{"BP_Mk12mod1","weaponA"},

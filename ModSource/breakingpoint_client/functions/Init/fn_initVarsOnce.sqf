@@ -61,6 +61,7 @@ BP_NormalClothing =
 	"BP_OptOut",
 	"BP_OptOut2",
 	"BP_OptOut3",
+	"BP_OptOut4",
 	"BP_StoneGhillie",
 	"BP_TreeGhillie",
 	"BP_DirtGhillie",
@@ -74,6 +75,7 @@ BP_NormalClothing =
 	"BP_Paramilitary_Jacket_Uniform",
 	"BP_Paramilitary_Shorts_Uniform",
 	"BP_Paramilitary_Tee_Uniform",
+	"U_B_GhillieSuit_BP",
 	"BP_Wetsuit"
 ];
 
@@ -114,7 +116,12 @@ BP_ZombieClothing =
 	"BP_Guarilla_Leader_Z",
 	"BP_Guarilla_Camo_Z",
 	"BP_Ghillie_Lush_Z",
-	"BP_Wetsuit_Z"
+	"BP_Wetsuit_Z",
+	"BP_Scientist_Z",
+	"BP_Worker_Z",
+	"BP_Medic_Z",
+	"BP_Mechanic_Z",
+	"BP_Construction_Z"
 ];
 
 BP_Group = [];
@@ -211,10 +218,10 @@ BP_Throwables =
 ];
 
 BP_ToolbeltItems = ["ItemWatch","ItemMap","ItemCompass","ItemGPS","ItemRadio","ItemSurgeryKit","ItemToolbox"];
-BP_AllVests = ["V_PlateCarrierIA2_dgtl_BP","V_VPack_BP","V_CPack_BP","V_Chestrig_blk_BP","V_Chestrig_rgr_BP","V_Chestrig_khk_BP","V_HarnessO_brn_BP","V_RebreatherB","V_HarnessOGL_brn_BP","V_Rangemaster_belt_BP","V_TacVest_camo_BP","V_BandollierB_cbr_BP","V_BandollierB_oli_BP","V_BandollierB_khk_BP","V_BandollierB_rgr_BP","V_BandollierB_blk_BP","V_PlateCarrierIA1_dgtl_BP","V_PlateCarrierIA1_dgt2_BP","V_PlateCarrier1_rgr_BP","V_PlateCarrier2_rgr_BP","V_PlateCarrier3_rgr_BP","V_PlateCarrierGL_rgr_BP","V_TacVest_brn_BP","V_TacVest_oli_BP","V_TacVest_blk_BP","V_TacVest_khk_BP","V_TacVest_camo_BP","V_HeroVest_BP","V_BanditBandolier_BP","V_PlateCarrierGL_tna_BP","V_TacVest_gen_BP","V_HarnessO_gry_BP","V_HarnessO_ghex_BP","V_BandollierB_ghex_BP","V_TacChestrig_grn_BP","V_TacChestrig_cbr_BP"];
-BP_AllSkins = ["BP_JungleGhillie_Uniform","BP_Paramilitary_Jacket_Uniform","BP_Paramilitary_Shorts_Uniform","BP_Paramilitary_Tee_Uniform","BP_OptOut3","BP_OptOut2","BP_OptOut","BP_Refugee_F","BP_Guardian_F","BP_Rebel_F","BP_Survivalist_F","BP_Survivalist_3","BP_Survivalist_2","BP_Survivalist_1","BP_Hunter_3","BP_Hunter_2","BP_Hunter_1","BP_Rebel_3","BP_Rebel_2","BP_Rebel_1","BP_Guardian_3","BP_Guardian_2","BP_Guardian_1","BP_Refugee_3","BP_Refugee_2","BP_Refugee_1","BP_Poloshirt_blue","BP_Poloshirt_burgundy","BP_Poloshirt_stripped","BP_Poloshirt_tricolour","BP_Poloshirt_salmon","BP_Poloshirt_redwhite","U_B_CombatUniform_mcam_worn_BP","U_B_GhillieSuit_BP","U_Competitor_BP","U_I_CombatUniform_BP","U_I_GhillieSuit_BP","U_O_OfficerUniform_ocamo_BP","U_Rangemaster_BP","U_B_Wetsuit_BP","U_I_OfficerUniform_ocamo_BP","U_I_OfficerUniform_BP","BP_GrassGhillie","BP_StoneGhillie","BP_TreeGhillie","BP_DirtGhillie","BP_SnowGhillie","BP_Hero_1","BP_Hero_2","BP_Hero_3","BP_Bandit_1","BP_Bandit_2","BP_Bandit_3","BP_Rogue1","BP_Survivalist1","BP_Poloshirt_zed","BP_Poloshirt_zed2","BP_Poloshirt_zed3","BP_Poloshirt_zed4"];
+BP_AllVests = ["V_PlateCarrierIA2_dgtl_BP","V_VPack_BP","V_CPack_BP","V_Chestrig_blk_BP","V_Chestrig_rgr_BP","V_Chestrig_khk_BP","V_HarnessO_brn_BP","V_RebreatherB","V_HarnessOGL_brn_BP","V_Rangemaster_belt_BP","V_BandollierB_cbr_BP","V_BandollierB_oli_BP","V_BandollierB_khk_BP","V_BandollierB_rgr_BP","V_BandollierB_blk_BP","V_PlateCarrierIA1_dgtl_BP","V_PlateCarrierIA1_dgt2_BP","V_PlateCarrier1_rgr_BP","V_PlateCarrier2_rgr_BP","V_PlateCarrier3_rgr_BP","V_PlateCarrierGL_rgr_BP","V_TacVest_brn_BP","V_TacVest_oli_BP","V_TacVest_blk_BP","V_TacVest_khk_BP","V_TacVest_camo_BP","V_HeroVest_BP","V_BanditBandolier_BP","V_PlateCarrierGL_tna_BP","V_TacVest_gen_BP","V_HarnessO_gry_BP","V_HarnessO_ghex_BP","V_BandollierB_ghex_BP","V_TacChestrig_grn_BP","V_TacChestrig_cbr_BP","V_PlateCarrierIAGL_dgtl_BP","V_TacVest_blk_POLICE_BP","V_TacVestIR_blk_BP","V_EngineerVest_BP","V_LBelt_BP","V_MBelt_BP","V_HBelt_BP","V_HVest_BP"];
+BP_AllSkins = ["BP_JungleGhillie_Uniform","BP_Paramilitary_Jacket_Uniform","BP_Paramilitary_Shorts_Uniform","BP_Paramilitary_Tee_Uniform","BP_Optout4","BP_OptOut3","BP_OptOut2","BP_OptOut","BP_Refugee_F","BP_Guardian_F","BP_Rebel_F","BP_Survivalist_F","BP_Survivalist_3","BP_Survivalist_2","BP_Survivalist_1","BP_Hunter_3","BP_Hunter_2","BP_Hunter_1","BP_Rebel_3","BP_Rebel_2","BP_Rebel_1","BP_Guardian_3","BP_Guardian_2","BP_Guardian_1","BP_Refugee_3","BP_Refugee_2","BP_Refugee_1","BP_Poloshirt_blue","BP_Poloshirt_burgundy","BP_Poloshirt_stripped","BP_Poloshirt_tricolour","BP_Poloshirt_salmon","BP_Poloshirt_redwhite","U_B_CombatUniform_mcam_worn_BP","U_B_GhillieSuit_BP","U_Competitor_BP","U_I_CombatUniform_BP","U_I_GhillieSuit_BP","U_O_OfficerUniform_ocamo_BP","U_Rangemaster_BP","U_B_Wetsuit_BP","U_I_OfficerUniform_ocamo_BP","U_I_OfficerUniform_BP","BP_GrassGhillie","BP_StoneGhillie","BP_TreeGhillie","BP_DirtGhillie","BP_SnowGhillie","BP_Hero_1","BP_Hero_2","BP_Hero_3","BP_Bandit_1","BP_Bandit_2","BP_Bandit_3","BP_Rogue1","BP_Survivalist1","BP_Poloshirt_zed","BP_Poloshirt_zed2","BP_Poloshirt_zed3","BP_Poloshirt_zed4"];
 BP_AllHeadgear = ["H_MilCap_dgtl","H_HelmetIA","H_Cap_headphones","H_Watchcap_blk","H_PilotHelmetFighter_B","BP_MilCap_Hero3","BP_MilCap_Hero1","BP_HeroCap","BP_HeroBoonie_cam","BP_Bandit_Bandanna","H_Shemag_olive","BP_Shemag_bandit","BP_RogueHat"];
-BP_AllBackpacks = ["BP_MPack","BP_SPack","BP_HPack","BP_RPack","BP_RPack2","BP_Bergen_Hero","BP_Carryall_Hero","BP_Carryall_Bandit","BP_Coyote_Bandit","BP_AssaultPack_khk","BP_AssaultPack_dgtl","BP_AssaultPack_rgr", "BP_AssaultPack_sgg", "BP_AssaultPack_blk", "BP_AssaultPack_cbr", "BP_AssaultPack_mcamo", "BP_AssaultPack_drt", "BP_AssaultPack_grs", "BP_AssaultPack_stn", "BP_AssaultPack_tre", "BP_Kitbag_mcamo", "BP_Kitbag_sgg", "BP_Kitbag_cbr", "BP_Kitbag_drt", "BP_Kitbag_grs", "BP_Kitbag_stn", "BP_Kitbag_tre", "BP_Bergen_sgg", "BP_Bergen_mcamo", "BP_Bergen_rgr", "BP_Bergen_blk", "BP_Bergen_drt", "BP_Bergen_grs", "BP_Bergen_stn", "BP_Bergen_tre", "BP_FieldPack_blk", "BP_FieldPack_ocamo", "BP_FieldPack_oucamo", "BP_FieldPack_cbr", "BP_FieldPack_drt", "BP_FieldPack_grs", "BP_FieldPack_stn", "BP_FieldPack_tree", "BP_Carryall_ocamo", "BP_Carryall_oucamo", "BP_Carryall_mcamo", "BP_Carryall_blk", "BP_Carryall_drt", "BP_Carryall_grs", "BP_Carryall_stn", "BP_Carryall_tre", "BP_Coyote_rgr", "BP_Coyote_oli", "BP_Coyote_cbr"];
+BP_AllBackpacks = ["BP_KPack","BP_MPack","BP_SPack","BP_HPack","BP_RPack","BP_RPack2","BP_Bergen_Hero","BP_Carryall_Hero","BP_Carryall_Bandit","BP_Coyote_Bandit","BP_AssaultPack_khk","BP_AssaultPack_dgtl","BP_AssaultPack_rgr", "BP_AssaultPack_sgg", "BP_AssaultPack_blk", "BP_AssaultPack_cbr", "BP_AssaultPack_mcamo", "BP_AssaultPack_drt", "BP_AssaultPack_grs", "BP_AssaultPack_stn", "BP_AssaultPack_tre", "BP_Kitbag_mcamo", "BP_Kitbag_sgg", "BP_Kitbag_cbr", "BP_Kitbag_drt", "BP_Kitbag_grs", "BP_Kitbag_stn", "BP_Kitbag_tre", "BP_Bergen_sgg", "BP_Bergen_mcamo", "BP_Bergen_rgr", "BP_Bergen_blk", "BP_Bergen_drt", "BP_Bergen_grs", "BP_Bergen_stn", "BP_Bergen_tre", "BP_FieldPack_blk", "BP_FieldPack_ocamo", "BP_FieldPack_oucamo", "BP_FieldPack_cbr", "BP_FieldPack_drt", "BP_FieldPack_grs", "BP_FieldPack_stn", "BP_FieldPack_tree", "BP_Carryall_ocamo", "BP_Carryall_oucamo", "BP_Carryall_mcamo", "BP_Carryall_blk", "BP_Carryall_drt", "BP_Carryall_grs", "BP_Carryall_stn", "BP_Carryall_tre", "BP_Coyote_rgr", "BP_Coyote_oli", "BP_Coyote_cbr", "BP_CivilianOneBlack","BP_CivilianOneRed","BP_CivilianOneGreen","BP_CivilianOneBlue"];
 BP_CustomItems = BP_ToolbeltItems + BP_AllVests + BP_AllSkins + BP_NormalClothing + BP_ZombieClothing + BP_AllHeadgear;
 
 BP_Constructables = ["BP_Crate1","BP_Safe","BP_RockStash","BP_CamoNet"];
@@ -314,7 +321,39 @@ BP_Houses =
 
 	"Land_i_Stone_Shed_01_b_clay_F",
 	"Land_i_Stone_Shed_01_b_raw_F",
-	"Land_i_Stone_Shed_01_b_white_F"
+	"Land_i_Stone_Shed_01_b_white_F",
+
+	//Tanoa
+	"Land_House_Small_05_F",
+	"Land_Shed_05_F",
+	"Land_Shed_02_F",
+	"Land_GarageShelter_01_F",
+    "Land_House_Small_03_F",
+    "Land_House_Small_04_F",
+    "Land_House_Small_02_F",
+    "Land_Slum_03_F",
+    "Land_Slum_01_F",
+	"Land_Slum_House02_F",
+	//LIVONIA
+	"Land_Camp_House_01_brown_F",
+	"Land_House_1W01_F",
+	"Land_House_1W02_F",
+	"Land_House_1W03_F",
+	"Land_House_1W04_F",
+	"Land_House_1W05_F",
+	"Land_House_1W06_F",
+	"Land_House_1W07_F",
+	"Land_House_1W08_F",
+	"Land_House_1W09_F",
+	"Land_House_1W10_F",
+	"Land_House_1W11_F",
+	"Land_House_1W12_F",
+	"Land_House_1W08_F",
+	"Land_House_2W01_F",
+	"Land_House_2W02_F",
+	"Land_House_2W03_F",
+	"Land_House_2W04_F",
+	"Land_House_2B01_F"	
 ];
 
 Attachments_Both = ["acc_flashlight","acc_pointer_IR","BP_milSpec_suppr"];
@@ -632,6 +671,24 @@ BP_ObjectPreload =
 	"BPZombie_Hunter1",
 	"BPZombie_Hunter2",
 	"BPZombie_Hunter3",
+	"BPZombie_EngineerF",
+	"BPZombie_Engineer1",
+	"BPZombie_Optout",
+	"BPZombie_Optout2",
+	"BPZombie_Optout3",
+	"BPZombie_Optout4",
+	"BPZombie_Optout5",
+	"BPZombie_Optout6",
+	"BPZombie_Optout7",
+	"BPZombie_Optout8",
+	"BPZombie_Scientist",
+	"BPZombie_Worker",
+	"BPZombie_Medic",
+	"BPZombie_Mechanic",
+	"BPZombie_Construction1",
+	"BPZombie_Construction2",
+	"BPZombie_Construction3",
+	"BPZombie_Construction4",
 	//Storage Objects
 
 	//Loot Boxes

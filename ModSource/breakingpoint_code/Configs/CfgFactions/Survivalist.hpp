@@ -89,7 +89,7 @@
 					toolbelt[] = {"ItemMap"};
 					primary[] = {};
 					launcher[] = {};
-					handgun[] = {};
+					handgun[] = {"BP_TranQPistol"};
 					clothing[] = {"BP_Survivalist_2"};
 					backpack[] = {"BP_Kitbag_drt"};
 					vest[] = {"V_VPack_BP"};
@@ -109,7 +109,7 @@
 				class Backpack: BP_BaseGear
 				{
 					weapons[] = {};
-					magazines[] = {"ItemPainkiller","ItemPainkiller","ItemFieldDressing"};
+					magazines[] = {"ItemPainkiller","ItemPainkiller","ItemFieldDressing","BP_15Rnd_9x21_Rubber"};
 					items[] = {};
 				};
 			};
@@ -118,29 +118,29 @@
 				class Spawn
 				{
 					toolbelt[] = {"ItemMap"};
-					primary[] = {};
+					primary[] = {"BP_TranQRifle"};
 					launcher[] = {};
-					handgun[] = {};
+					handgun[] = {"BP_TranQPistol"};
 					clothing[] = {"BP_Survivalist_3"};
 					backpack[] = {"BP_Kitbag_grs"};
 					vest[] = {"V_CPack_BP"};
 				};
 				class Uniform: BP_BaseGear
 				{
-					weapons[] = {"BP_Crossbow_DigitCamo"};
+					weapons[] = {};
 					magazines[] = {"ItemBandage","ItemBandage"};
 					items[] = {};
 				};
 				class Vest: BP_BaseGear
 				{
 					weapons[] = {};
-					magazines[] = {"BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag","BP_Arrow_Mag"};
+					magazines[] = {};
 					items[] = {};
 				};
 				class Backpack: BP_BaseGear
 				{
 					weapons[] = {};
-					magazines[] = {"ItemAntibiotic","ItemDuctTape","ItemKnife"};
+					magazines[] = {"ItemAntibiotic","ItemDuctTape","ItemKnife","BP_10Rnd_762Rubber_Mag","BP_10Rnd_762Rubber_Mag","BP_10Rnd_762Rubber_Mag","BP_15Rnd_9x21_Rubber"};
 					items[] = {"Binocular","BP_SOS"};
 				};
 			};
@@ -185,13 +185,13 @@
 				};
 				class Outlaw
 				{
-					food = 0;
-					drink = 0;
-					bandage = 0;
-					dressing = 0;
-					morphine = 0;
-					surgery = 0;
-					gut = -1000;
+					food = -5;
+					drink = -5;
+					bandage = -5;
+					dressing = -10;
+					morphine = -25;
+					surgery = -50;
+					gut = 0;
 				};
 				class Hunter
 				{
@@ -215,12 +215,12 @@
 				};
 				class Undead
 				{
-					food = 0;
-					drink = 0;
-					bandage = 0;
-					dressing = 0;
-					morphine = 0;
-					surgery = 0;
+					food = -5;
+					drink = -5;
+					bandage = -5;
+					dressing = -10;
+					morphine = -25;
+					surgery = -50;
 					gut = 0;
 				};
 			};
@@ -340,8 +340,8 @@
 				{
 					Level_0 = 50;
 					Level_1 = 50;
-					Level_2 = 50;
-					Level_3 = 50;
+					Level_2 = 75;
+					Level_3 = 100;
 				};
 			};
 		};

@@ -27,9 +27,9 @@ class CfgTime
 	};
 	class newhaven: Base
 	{
-        date[] = {10,1,2035};
-		first[] = {14,00};
-		second[] = {22,00};
+        date[] = {10,6,2035};
+		first[] = {5,45};
+		second[] = {16,10};
 	};
 	class Esseker: Base
 	{
@@ -39,21 +39,21 @@ class CfgTime
 	};
 	class Thirsk: Base
 	{
-        date[] = {10,6,2035};
-		first[] = {9,00};
-		second[] = {12,00};
+        date[] = {27,3,2035};
+		first[] = {10,00};
+		second[] = {16,15};
 	};
 	class ThirskW: Base
 	{
-        date[] = {11,5,2035};
-        first[] = {04,00};
-        second[] = {10,00};
+        date[] = {27,3,2035};
+        first[] = {09,00};
+        second[] = {16,20};
 	};
 	class Chernarus: Base
 	{
         date[] = {10,6,2035};
 		first[] = {9,00};
-		second[] = {12,00};
+		second[] = {14,50};
 	};
 	class namalsk: Base
 	{
@@ -67,4 +67,16 @@ class CfgTime
 		first[] = {5,30};
 		second[] = {16,30};
 	};
+	class Tembelan: Base
+	{
+		date[] = {10,6,2035};
+		first[] = {9,0};
+		second[] = {16,30};
+	};
+	class egl_laghisola: Base
+	{
+		date[] = {10,6,2035};
+		first[] = {9,0};
+		second[] = {14,57};
+	};	
 };
